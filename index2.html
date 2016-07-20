@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LightBox</title>
+	<title>Modal</title>
 	<style>
 /* The Modal (background) */
 .modal {
@@ -77,10 +77,10 @@
 </head>
 <body>
 <!-- Trigger/Open The Modal -->
-<h2>Lightbox</h2>
+<h2>Modal</h2>
 
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Lightbox</button>
+<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -89,10 +89,10 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">X</span>
-      <h2>Lightbox</h2>
+      <h2>Modal</h2>
     </div>
     <div class="modal-body">
-      <p><img src="https://caffeinatedpriest.files.wordpress.com/2015/08/baby-hatchling-sea-turtle.jpg"></p>
+      <p>A Modal</p>
     </div>
     <div class="modal-footer">
       <h3></h3>
@@ -122,7 +122,7 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+document.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
